@@ -4,3 +4,4 @@
 3-print_alphabets.c: print the alphabet in lowercase, and then in uppercase, followed by a new line. Use putchar. It can be used only three times.
 4-print_alphabt.c: prints the alphabet (except e and q) in lowercase, followed by a new line. Use putchar. It can be used only twice.
 5-print_numbers.c: prints all single digit numbers of base 10 starting from 0, followed by a new line.
+6-print_numberz.c: the same as 5 but can't use char, only putchar, and it can be used only twice.
