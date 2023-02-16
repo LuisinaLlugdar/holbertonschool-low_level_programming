@@ -6,3 +6,4 @@
 5-print_numbers.c: prints all single digit numbers of base 10 starting from 0, followed by a new line.
 6-print_numberz.c: the same as 5 but can't use char, only putchar, and it can be used only twice.
 7-print_tebahpla.c: prints the lowercase alphabet in reverse, followed by a new line.
+8-print_base16.c: prints all the numbers of base 16 in lowercase (0123456789abcdef), followed by a new line. Use putchar, only three times.
