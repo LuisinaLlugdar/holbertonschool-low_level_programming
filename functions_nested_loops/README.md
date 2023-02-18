@@ -6,7 +6,7 @@
 5-sign.c: prints the sign of a number. Returns 1 and prints + if positive, returns 0 and prints 0 if zero, returns -1 and prints - if negative.
 6-abs.c:  computes the absolute value of an integer.
 7-print_last_digit.c: prints the last digit of a number. Returns the value of the last digit.
-
+8-24_hours.c: prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 
 
 
