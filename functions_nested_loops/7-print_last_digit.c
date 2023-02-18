@@ -15,10 +15,6 @@ if (n < 0)
 {
 lastdigit = -n % 10;
 }
-if (n == 0)
-{
-return ('0');
-}
 _putchar('0' + lastdigit);
 return (lastdigit);
 }
