@@ -21,4 +21,4 @@ fclean:
 
 .PHONY: re
 re:
-	$(CC) $(SRC)
+	fclean all
