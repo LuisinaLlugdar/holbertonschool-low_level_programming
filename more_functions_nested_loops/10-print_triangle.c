@@ -14,7 +14,7 @@ _putchar('\n');
 }
 else
 {
-for (a = 1; a <= size; a++)
+for (a = 1; a <= size + 1; a++)
 {
 if (a > 1)
 {
@@ -22,7 +22,7 @@ for (b = 1; b <= size - a; b++)
 {
 _putchar(' ');
 }
-for (b = 1; b <= a; b++)
+for (b = 1; b <= a - 1; b++)
 {
 _putchar('#');
 }
