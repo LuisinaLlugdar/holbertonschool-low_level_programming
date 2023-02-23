@@ -13,7 +13,7 @@ else
 int a, b;
 for (b = 0; b <= size; b++)
 {
-for (a = 0; a <= size; a++)
+for (a = 0; a <= size - 1; a++)
 {
 _putchar('#');
 }
