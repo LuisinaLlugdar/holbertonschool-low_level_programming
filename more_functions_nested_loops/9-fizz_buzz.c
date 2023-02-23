@@ -27,6 +27,7 @@ printf("Fizz ");
 else if (a == 100)
 {
 printf("Buzz");
+printf("\n");
 }
 else
 {
