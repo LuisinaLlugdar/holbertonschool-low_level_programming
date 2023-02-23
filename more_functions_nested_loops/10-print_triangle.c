@@ -7,27 +7,25 @@
  */
 void print_triangle(int size)
 {
-int a, b;
+int filas, hashtags, espacios;
 if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (a = 1; a <= size + 1; a++)
+for (filas = 1; filas <= size; filas++)
 {
-if (a > 1)
-{
-for (b = 1; b <= size - a; b++)
+for (espacios = size - filas; espacios >= 1; espacios--)
 {
 _putchar(' ');
 }
-for (b = 1; b <= a - 1; b++)
+for (hashtags = 1; hashtags <= filas; hashtags++)
 {
 _putchar('#');
-}
 }
 _putchar('\n');
 }
 }
 }
+
