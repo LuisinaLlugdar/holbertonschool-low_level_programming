@@ -7,8 +7,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int a, b;
-	char *p;
+	int a, b, c = 0;
 
 	a = 0;
 	while (s[a] != '\0')
@@ -18,11 +17,12 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[b] == s[a])
 			{
-				p = &s[a];
+				c++;
+				break;
 			}
 			b++;
 		}
 		a++;
 	}
-	return (p);
+	return ((s + c));
 }
