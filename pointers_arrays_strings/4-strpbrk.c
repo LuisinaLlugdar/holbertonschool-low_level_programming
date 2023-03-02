@@ -10,19 +10,19 @@ char *_strpbrk(char *s, char *accept)
 	int a, b, c = 0;
 
 	a = 0;
-	while (s[a] != '\0')
+	while (s[a])
 	{
 		b = 0;
-		while (accept[b] != '\0')
+		while (accept[b])
 		{
-			if (accept[b] == s[a])
+			if (s[a] == accept[b])
 			{
 				c++;
-				break;
+				return (s + c);
 			}
 			b++;
 		}
 		a++;
 	}
-	return ((s + c));
+	return ('\0');
 }
