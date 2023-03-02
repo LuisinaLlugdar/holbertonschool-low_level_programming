@@ -8,7 +8,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	int a, b;
+	int a;
 	char *p;
 
 	a = 0;
@@ -16,16 +16,13 @@ char *_strchr(char *s, char c)
 	{
 		a++;
 	}
-	for (b = 0; b <= a; b++)
+	if (s[a] == c)
 	{
-		if (s[b] == c)
-		{
-			p = &s[b];
-		}
-		else
-		{
-			return ('\0');
-		}
+		p = &s[a];
 	}
-	return (p);
+	else
+	{
+		return ('\0');
+	}
+return (p);
 }
