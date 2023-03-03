@@ -8,7 +8,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int a, b;
-	char *p;
 
 	a = 0;
 	while (needle[a])
@@ -18,8 +17,8 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*needle == haystack[b])
 			{
-				p = haystack + b;
-				return (p);
+				haystack = haystack + b;
+				return (haystack);
 			}
 			b++;
 		}
