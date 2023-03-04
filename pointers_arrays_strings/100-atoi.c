@@ -8,12 +8,25 @@
  */
 int _atoi(char *s)
 {
-	int a = 0;
+	int sg = 1, r = 0;
 
-	while (*s >= '0' && *s <= '9')
+	while (*s != '\0')
 	{
-		a = (a * 10) + (*s - '0');
-		a++;
-	}
-	return (a);
+		if (*s == '-')
+		{
+			sg = -sg;
+		}
+		if (*s >= '0' && *s <= '9')
+		{
+			r = r * 10 + (*s - '0');
+			while (*(s + 1) >= '0' && *(s + 1) <= '9')
+			{
+				s++;
+				r = r * 10 + (*s - '0');
+			}
+			break;
+			}
+		s++;
+		}
+	return (sg * r);
 }
