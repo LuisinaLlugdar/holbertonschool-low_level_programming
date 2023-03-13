@@ -26,5 +26,4 @@ char *create_array(unsigned int size, char c)
 		aux[a] = c;
 	}
 	return (aux);
-	free(aux);
 }
