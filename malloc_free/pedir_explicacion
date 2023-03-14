@@ -1,0 +1,25 @@
+ #include "main.h"
+    2 #include <stdio.h>
+    3 #include <stdlib.h>
+    4 /**
+    5  * str_concat - concatenates two strings
+    6  * @s1: string
+    7  * @s2: string to be concatenated
+    8  * Return: pointer to a newly allocated space in memory
+    9  */
+   10 char *str_concat(char *s1, char *s2)
+   11 {
+   12 »·······char *_strcat(char *dest, char *src);
+   13 »·······char *aux;
+   14 »·······int a;
+   15
+   16 »·······a = _strlen(s1) + _strlen(s2);
+   17 »·······aux = malloc((sizeof(char) * a) + 1);
+   18 »·······if (aux == NULL)
+   19 »·······{
+   20 »·······»·······return (NULL);
+   21 »·······}
+   22 »·······_strcat(char *s1, char *s2);
+   23 »·······aux = s1;
+   24 »·······return (aux);
+   25 }
