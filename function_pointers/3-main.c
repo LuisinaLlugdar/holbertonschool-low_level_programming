@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 
 	check_op = get_op_func(argv[2]);
-	if (check_op == NULL)
+	if (check_op == NULL || (argv[2][1] != '\0'))
 	{
 		printf("Error\n");
 		exit(99);
