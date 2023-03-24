@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 	b = 0;
-	while (format[b] != '\0' && format != NULL)
+	while (format != NULL && format[b] != '\0')
 	{
 		a = 0;
 		while (option[a].dtype != '\0')
